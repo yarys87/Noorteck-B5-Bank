@@ -60,7 +60,7 @@ public class LoansPage extends CommonUI {
 		enter(Address, address);
 	
 	}
-	public void enterLoanTypeDropdown(String methodName, String indexTextValue) {
+	public void selectLoanTypeDropdown(String methodName, String indexTextValue) {
 		selectFromDropdown(LoanTypeDropown,methodName, indexTextValue);
 	}
 	public void enterYearsToRepayLoan(String yearsToRepayLoan) {

@@ -36,8 +36,22 @@ String url = "https://usdemo.vee24.com/#/transactions";
 	    transferObj.enterSsNumber("12345677");
 	    transferObj.enterAtmPin("1235");
 	    transferObj.clickTransferFunds();
-        Thread.sleep(10000);
+   
 
+	}
+	public void BankTestCaseTwo() {
+		HomePage homepageObj = new HomePage();
+		homepageObj.clickLoans();
+		loansObj.enterName("John Cena");
+		loansObj.enterAddress("123 java drive");
+		loansObj.selectLoanTypeDropdown("Value", "Retirement");
+		loansObj.enterYearsToRepayLoan("2");
+		loansObj.clickNextButton();
+		loansObj.enterAmount("5000");
+		loansObj.enterMothersMaidenName("Kim");
+		loansObj.enterSocialSecurityNumber("123456778");
+		loansObj.clickNext();
+		loansObj.clickConfirmButton();
 	}
 }
 
